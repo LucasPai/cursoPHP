@@ -17,7 +17,6 @@ if(insereProduto($conexao, $nome, $preco)) { ?>
 ?>
     <p class="text-danger">Produto <?= $nome ?>, <?= $preco ?> não foi adicionado: <?= $msg?></p>
 <?php
-
 }
 ?>
 

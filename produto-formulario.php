@@ -1,4 +1,9 @@
-<?php include("cabecalho.php");?>
+<?php include("cabecalho.php");
+include("conecta.php");
+include("banco-categoria.php")
+
+?>
+
     <h1> Formulário de produto </h1> 
     <form action="adiciona-produto.php" method="post">
         <table class="table">
@@ -13,6 +18,14 @@
             <tr>
                 <td>Descrição</td>
                 <td><textarea class="form-control" name="descricao"></textarea></td>
+            </tr>
+            <tr>
+                <td>Categoria</td>
+                <td>
+                    <input type="radio" name"categoria_id" value="1">Esporte</br>
+                    <input type="radio" name"categoria_id" value="2">Esporte</br>
+                    <input type="radio" name"categoria_id" value="3">Esporte</br>
+                </td>
             </tr>
             <tr>
                 <td>
